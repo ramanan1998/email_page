@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    list-style: none;
+}
+:root{
+    --primary-color : #6F96AA;
+    --orange-color  : #FF844B;
+    --para-font-size : 15px;
+}
+i{
+    font-size: 15px;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr 6fr;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+section{
+    height: 100vh;
+}
+div.logo{
+    height: 70px;
+    width: inherit;
+}
+.fa-apple-whole{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--orange-color);
+}
+div.nav-icons{
+    height: inherit;
+    width: inherit;
+}
+li.mail-icons{
+    margin: 0 auto;
+    text-align: center;
+    padding: 7px 0;
+}
+.mail-icons button{
+    font-size: 17.5px;
+    color: var(--primary-color); 
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;  
+}
+.mail-icons:nth-child(2) button{
+    box-shadow: 0px 0px 6px 0px rgba(194, 194, 194, 0.75);
+    color: var(--orange-color);
+}
+.mail-icons button:hover{
+    box-shadow: 0px 0px 6px 0px rgba(194, 194, 194, 0.75);
+    color: var(--orange-color);
+}
+section.email-container{
+    background-color: #F1F6FA;
+}
+div.email-header{
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.email-notifications{
+    display: flex;
+    flex-direction: row;
+}
+div.notification-icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.notification-count{
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    height: 15px;
+    width: 15px;
+    background-color: var(--orange-color);
+    border-radius: 3px;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+div.profile-pic{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+div.profile-name{
+    margin-top: 5px;
+    line-height: 25px;
+    color: var(--primary-color);
+}
+div.email-nav-and-list{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    gap: 20px;
+    height: 580px;
+    padding-left: 20px;
+}
+div.email-nav{
+    height: inherit;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px 0;
+}
+div.mail-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+.new-mail-btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--orange-color);
+    color: white;
+    cursor: pointer;
+}
+.new-mail-btn i{
+    position: relative;
+    top: 5%;
+}
+.email-nav-buttons-container{
+    text-align: center;
+    padding: 10px 0;
+}
+.mail-btn, .labels button{
+    margin: 5px;
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    color: var(--primary-color);
+    padding-left: 25px;
+    background-color: white;
+    text-align: justify;
+    cursor: pointer;
+}
+.mail-btn i{
+    position: relative;
+    top: 5%;
+    left: -10px;
+}
+.mail-btn:hover,.labels button:hover{
+    box-shadow: 0px 0px 6px 0px rgba(194, 194, 194, 0.75);
+    color: var(--orange-color);
+}
+.mail-btn i{
+    font-size: 15px;
+}
+div.labels{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--para-font-size);
+}
+.labels p{
+    position: relative;;
+    top: -10%;
+    left: 5%;
+}
+#work i{
+    color: var(--orange-color);
+}
+#side-project i{
+    color: aqua;
+}
+div.email-list-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+div.search-bar{
+    display: block;
+    position: relative;
+    height: 40px;
+    width: auto;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: white;
+}
+.search-bar input{
+    position: absolute;
+    min-width: 200px; 
+    border: none;
+    caret-color: var(--primary-color);
+    color: var(--primary-color);
+    left: 15%;
+}
+.search-bar i{
+    position: absolute;
+    color: var(--orange-color);
+}
+div.email-list{
+    height: auto;
+    overflow-y: scroll;
+}
+.view-email-btn{
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+div.email-tile{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    height: 110px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+div.profile-img{
+    width: 40px;
+    position: relative;
+}
+div.profile-img div{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: -15%;
+    left: -25%;
+}
+div.email-content{
+    width: 270px;
+    padding: 0 10px;
+}
+div.email-content p{
+    margin: 10px 0 0 2px;
+    font-size: 10px;
+    color: var(--primary-color);
+    line-height: 17px;
+}
+div.time-and-attach{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: var(--primary-color);
+    font-size: 11px;
+}
+div.time-and-attach i{
+    font-size: 15px;
+}
+div.email-footer{
+    position: relative;
+    left: 50%;
+    padding: 10px 0;
+    height: inherit;
+    width: auto;
+}
+
+li.pages{ 
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    font-size: var(--para-font-size);
+    border-radius: 15px;
+    background-color: white;
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+section.preview-container{
+    overflow-y: scroll;
+}
+div.preview-header, div.view-email-header{
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.view-email-header{
+    font-size: 25px;
+}
+
+div.view-email-header p{
+    font-size: 10px;
+    color: var(--primary-color);
+}
+div.preview-notifications, div.sender-notification{
+    display: flex;
+    flex-direction: row;
+}
+div.preview-icon, div.sender-icon{
+    display: inline-block;
+    flex-direction: row;
+}
+button.view-email-icon{
+    border: none;
+    background-color: white;
+    color: var(--primary-color);
+    margin-left: 20px;
+    cursor: pointer;
+}
+button.view-email-icon:hover{
+    color: var(--orange-color);
+}
+div.email-contents{
+    padding: 0 10px;
+}
+div.sender-profile{
+    display: flex;
+    flex-direction: row;
+}
+div.email-body{
+    padding: 10px;
+    font-size: var(--para-font-size);
+    color: var(--primary-color);
+    line-height: 25px;
+    text-align: left;
+}
+div.attachments{
+    height: 100px;
+    width: 100%;
+}
+div.img-attach{
+    position: relative;
+    display: inline-block;
+    height: inherit;
+    width: 150px;
+    margin-left: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    z-index: 0;
+    cursor: pointer;
+}
+div.img-name{
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    top: 70%;
+    z-index: 1;
+    text-align: center;
+    font-size: 10px;
+    color: var(--orange-color);
+    word-spacing: 10px;
+} 
+div.img-name i{
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+div.reply-container{
+    height: 110px;
+    width: auto;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+div.reply-tools{
+    height: auto;
+    width: inherit;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+}
+div.reply-tools textarea{
+    width: 100%;
+    height: 50px;
+    resize: none;
+    padding: 10px 20px;
+    border: none;
+    font-family: sans-serif;
+    color: var(--primary-color);
+}
+div.text-tools{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    height: 40px;
+    width: auto;
+    border-top: 2px solid var(--primary-color);
+    padding: 10px 20px;
+}
+li.tools, li.send-icons{
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 0 10px;
+    cursor: pointer;
+}
+li.tools:hover, li.send-icons:hover{
+    color: var(--orange-color);
+}
+div.send-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: inherit;
+    padding: 10px 20px;
+}
+button.send{
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--orange-color);
+    color: white;
+    cursor: pointer;
+}
+button.send i{
+    position: relative;
+    bottom: -5%;
+}
