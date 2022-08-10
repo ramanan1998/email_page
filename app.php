@@ -1,10 +1,10 @@
 <?php
 
 function connect_db(){  //connecting database
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-    $db = "email_table";
+    $server = "sql6.freesqldatabase.com";
+    $username = "sql6511822";
+    $password = "ItFPWsl4Rm";
+    $db = "sql6511822";
 
     $connect = mysqli_connect($server, $username, $password, $db);
 
